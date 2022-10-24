@@ -1,17 +1,20 @@
 <mat-sidenav-container class="sidenav-container">
+
   <mat-sidenav #drawer class="sidenav" fixedInViewport
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Matt Miholics
-        <br>Game/Web Developer
+    <mat-toolbar>
+      Matt Miholics<br>
+      Game/Web Developer
     </mat-toolbar>
+
     <mat-nav-list>
-      <a mat-list-item (click)="navigateToSection('Welcome')">Welcome</a>
-      <a mat-list-item href="#Porfolio">Porfolio</a>
-      <a mat-list-item href="#Resume">Resume</a>
-      <a mat-list-item href="#Personal Projects">Personal Projects</a>
-      <a mat-list-item (click)="navigateToSection('Welcome')">Contact</a>
+      <a mat-list-item (click)="drawer.mode === 'side' || drawer.close(); navigateToSection('Welcome')">Welcome</a>
+      <a mat-list-item (click)="drawer.mode === 'side' || drawer.close(); navigateToSection('Portfolio')">Porfolio</a>
+      <a mat-list-item (click)="drawer.mode === 'side' || drawer.close(); navigateToSection('Resume')">Resume</a>
+      <a mat-list-item (click)="drawer.mode === 'side' || drawer.close(); navigateToSection('PersonalProjects')">Personal Projects</a>
+      <a mat-list-item (click)="drawer.mode === 'side' || drawer.close(); navigateToSection('Contact')">Contact</a>
     </mat-nav-list> 
   </mat-sidenav>
   <mat-sidenav-content>
