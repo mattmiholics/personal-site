@@ -13,7 +13,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { BodyContentComponent } from './body-content/body-content.component';
 import {MatCardModule} from '@angular/material/card';
-import { PdfViewerComponent } from 'ng2-pdf-viewer'; 
+import {MatGridListModule} from '@angular/material/grid-list'; 
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -33,6 +34,8 @@ import { PdfViewerComponent } from 'ng2-pdf-viewer';
     MatIconModule,
     MatListModule,
     MatCardModule,
+    MatGridListModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
