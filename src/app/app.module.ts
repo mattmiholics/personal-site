@@ -12,6 +12,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { BodyContentComponent } from './body-content/body-content.component';
+import {MatCardModule} from '@angular/material/card';
+import { PdfViewerComponent } from 'ng2-pdf-viewer'; 
+
 
 @NgModule({
   declarations: [
@@ -28,7 +31,8 @@ import { BodyContentComponent } from './body-content/body-content.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
