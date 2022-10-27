@@ -15,6 +15,7 @@ import { BodyContentComponent } from './body-content/body-content.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list'; 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatCardModule,
     MatGridListModule,
     FlexLayoutModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

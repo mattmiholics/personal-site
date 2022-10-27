@@ -1,4 +1,10 @@
 .title-toolbar{justify-content: center;background: #b1bfca;}
 .body-component{background-color: #e3f2fd;}
 .resumebutton{justify-content: center;display: flex;padding: 20px;}
-.resumecards{justify-content: center;}
+.mat-card-header{justify-content: center; text-align: center;}
+.mat-card-content{justify-content: center; text-align: center;}
+.resumecards{
+   
+    justify-content: center;
+    align-items: center;
+}

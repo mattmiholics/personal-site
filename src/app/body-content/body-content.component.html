@@ -3,7 +3,7 @@
 <div id="Portfolio">
   <mat-toolbar class = "title-toolbar">Portfolio</mat-toolbar>
   <div class="portfoliocards"fxLayout="row wrap" fxLayoutGap="16px grid">
-    <div fxFlexOffset="5%" fxFlexOffset.sm="0%" fxFlexOffset.xs="0%" fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%">
+    <div fxFlexOffset="10%" fxFlexOffset.sm="0%"fxFlexOffset.xs="0%"fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%">
       <mat-card>
         <mat-card-header>
         <mat-card-title mat>Mailbox</mat-card-title>
@@ -11,8 +11,19 @@
         <img mat-card-image class = "portfolioimg" src="/assets/mailbox-thumbnail.png" alt="mailbox img">
         <mat-card-content>
           <p>Mailbox made as a part of street furnature asset pack</p>
-        </mat-card-content>
+          <mat-expansion-panel class="mat-elevation-z0">
+           <mat-expansion-panel-header>
+            <mat-panel-title>
+              Click to See More   
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+              <img mat-card-image src="/assets/mailboxwire.jpg" alt="mailbox img">
+              <img mat-card-image src="/assets/mailboxflat.png" alt="mailbox img">
+              <img mat-card-image src="/assets/mailboxref.png" alt="mailbox img">
+          </mat-expansion-panel>
+        </mat-card-content> 
       </mat-card>
+      
     </div>
     <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%">
       <mat-card>
@@ -22,6 +33,17 @@
         <img mat-card-image class = "portfolioimg" src="/assets/benchthumbnail.png" alt="mailbox img">
         <mat-card-content>
           <p>Mailbox made as a part of street furnature asset pack</p>
+          <mat-expansion-panel class="mat-elevation-z0">
+            <mat-expansion-panel-header>
+             <mat-panel-title>
+               Click to See More   
+             </mat-panel-title>
+           </mat-expansion-panel-header>
+               <img mat-card-image src="/assets/benchwire.jpg" alt="mailbox img">
+               <img mat-card-image src="/assets/benchflats.png" alt="mailbox img">
+               <img mat-card-image src="/assets/benchflats2.png" alt="mailbox img">
+               <img mat-card-image src="/assets/benchref.png" alt="mailbox img">
+           </mat-expansion-panel>
         </mat-card-content>
       </mat-card>
     </div>
@@ -98,8 +120,8 @@
 </div>
 <div id="PersonalProjects">
   <mat-toolbar class = "title-toolbar">Personal Projects</mat-toolbar>
-    <<div class="portfoliocards"fxLayout="row wrap" fxLayoutGap="16px grid">
-      <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%">
+    <div class="portfoliocards"fxLayout="row wrap" fxLayoutGap="16px grid">
+      <div fxFlexOffset="10%" fxFlexOffset.sm="0%"fxFlexOffset.xs="0%" fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%">
         <mat-card>
           <mat-card-header>
           <mat-card-title mat>Mailbox</mat-card-title>
