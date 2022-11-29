@@ -1,12 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { MatDialog } from '@angular/material/dialog';
+import { MailboxdialogComponent } from '../mailboxdialog/mailboxdialog.component';
+import { BenchDialogComponent } from '../bench-dialog/bench-dialog.component';
 
 @Component({
   selector: 'app-body-content',
   templateUrl: './body-content.component.html',
   styleUrls: ['./body-content.component.scss']
 })
-export class BodyContentComponent implements OnInit {
+export class BodyContentComponent {
   
   cols : number;
 
@@ -18,7 +21,9 @@ export class BodyContentComponent implements OnInit {
     xs: 1
   }
 
-  constructor(private breakpointObserver: BreakpointObserver) {
+  
+  constructor(private breakpointObserver: BreakpointObserver, public dialog: MatDialog) {
+    
     this.breakpointObserver.observe([
       Breakpoints.XSmall,
       Breakpoints.Small,
@@ -43,8 +48,20 @@ export class BodyContentComponent implements OnInit {
           this.cols = this.gridByBreakpoint.xl;
         }
       }
+      
     });
+    
   }
-  ngOnInit(): void {
-  }
+  openMailboxDialog(): void {
+    let dialogRef = this.dialog.open(MailboxdialogComponent, {
+
+      height: '90%', 
+    });
+}
+openBenchDialog(): void {
+  let dialogRef = this.dialog.open(BenchDialogComponent, {
+
+    height: '90%', 
+  });
+}
 }

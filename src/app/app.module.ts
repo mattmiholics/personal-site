@@ -11,18 +11,23 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatDialogModule } from '@angular/material/dialog';
 import { BodyContentComponent } from './body-content/body-content.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list'; 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { MailboxdialogComponent } from './mailboxdialog/mailboxdialog.component';
+import { BenchDialogComponent } from './bench-dialog/bench-dialog.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    BodyContentComponent
+    BodyContentComponent,
+    MailboxdialogComponent,
+    BenchDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -33,11 +38,13 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
+    MatDialogModule,
     MatListModule,
     MatCardModule,
     MatGridListModule,
     FlexLayoutModule,
     MatExpansionModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

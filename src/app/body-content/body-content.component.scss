@@ -1,10 +1,11 @@
-.title-toolbar{justify-content: center;background: #b1bfca;}
+.title-toolbar{justify-content: center;background: #b1bfca;font-size: 40px;}
 .body-component{background-color: #e3f2fd;}
-.resumebutton{justify-content: center;display: flex;padding: 20px;}
+.resumebutton{justify-content: center;display: flex;padding: 40px;}
+.resumebutton a{font-size: 30px;line-height: 35px;}
+.mat-card-title{font-size: 30px;line-height: 35px;}
 .mat-card-header{justify-content: center; text-align: center;}
-.mat-card-content{justify-content: center; text-align: center;}
-.resumecards{
-   
-    justify-content: center;
-    align-items: center;
-}
+.mat-card-subtitle{font-size: 25px;line-height: 30px;}
+.mat-card-content{justify-content: center; text-align: center;font-size: 25px;line-height: 30px;}
+.resumecards{justify-content: center;align-items: center;margin-right: 0 !important;}
+.portfoliocards{margin-right: 0 !important;}
+

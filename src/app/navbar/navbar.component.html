@@ -8,13 +8,16 @@
       Matt Miholics<br>
       Game/Web Developer
     </mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item (click)="drawer.mode === 'side' || drawer.close(); navigateToSection('Welcome')">Welcome</a>
-      <a mat-list-item (click)="drawer.mode === 'side' || drawer.close(); navigateToSection('Portfolio')">Porfolio</a>
-      <a mat-list-item (click)="drawer.mode === 'side' || drawer.close(); navigateToSection('Resume')">Resume</a>
-      <a mat-list-item (click)="drawer.mode === 'side' || drawer.close(); navigateToSection('PersonalProjects')">Personal Projects</a>
-      <a mat-list-item (click)="drawer.mode === 'side' || drawer.close(); navigateToSection('Contact')">Contact</a>
+    <div class="sidenavWrapper"> 
+      <mat-nav-list>
+        <a mat-list-item (click)="drawer.mode === 'side' || drawer.close(); navigateToSection('Welcome')">Welcome</a>
+        <a mat-list-item (click)="drawer.mode === 'side' || drawer.close(); navigateToSection('Portfolio')">Porfolio</a>
+        <a mat-list-item (click)="drawer.mode === 'side' || drawer.close(); navigateToSection('Resume')">Resume</a>
+        <a mat-list-item (click)="drawer.mode === 'side' || drawer.close(); navigateToSection('PersonalProjects')">Projects</a>
+        <a mat-list-item (click)="drawer.mode === 'side' || drawer.close(); navigateToSection('Contact')">Contact</a>
     </mat-nav-list> 
+  </div>
+   
   </mat-sidenav>
   <mat-sidenav-content>
      <mat-toolbar color="primary" *ngIf="isHandset$ | async">
