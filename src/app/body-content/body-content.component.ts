@@ -3,6 +3,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { MatDialog } from '@angular/material/dialog';
 import { MailboxdialogComponent } from '../mailboxdialog/mailboxdialog.component';
 import { BenchDialogComponent } from '../bench-dialog/bench-dialog.component';
+import { TrenchDialogComponent } from '../trench-dialog/trench-dialog.component';
 
 @Component({
   selector: 'app-body-content',
@@ -60,6 +61,12 @@ export class BodyContentComponent {
 }
 openBenchDialog(): void {
   let dialogRef = this.dialog.open(BenchDialogComponent, {
+
+    height: '90%', 
+  });
+}
+openTrenchDialog(): void {
+  let dialogRef = this.dialog.open(TrenchDialogComponent, {
 
     height: '90%', 
   });

@@ -3,7 +3,7 @@
 <div id="Portfolio">
   <mat-toolbar class = "title-toolbar">Portfolio</mat-toolbar>
   <div class="portfoliocards"fxLayout="row wrap" fxLayoutGap="16px grid"fxLayoutGap.xs="0% grid">
-    <div fxFlexOffset="1%" fxFlexOffset.sm="1%"fxFlexOffset.xs="0%" fxFlex.sm="33%" fxFlex="33%" fxFlex.xs="100%" fxLayoutGap.xs="0%" >
+    <div fxFlexOffset=".9%" fxFlexOffset.sm="1%"fxFlexOffset.xs="0%" fxFlex.sm="33%" fxFlex="33%" fxFlex.xs="100%" fxLayoutGap.xs="0%" >
       <mat-card (click)="openMailboxDialog()">
         <mat-card-header>
         <mat-card-title mat>Mailbox</mat-card-title>
@@ -20,14 +20,14 @@
         <mat-card-header>
         <mat-card-title mat>Park Bench</mat-card-title>
       </mat-card-header>
-        <img mat-card-image class = "portfolioimg" src="/assets/benchthumbnail.png" alt="mailbox img">
+        <img mat-card-image class = "portfolioimg" src="/assets/benchthumbnail.png" alt="bench thumbnail">
         <mat-card-content>
-          <p>Mailbox made as a part of street furnature asset pack</p>
+          <p>Bench made as a part of street furnature asset pack</p>
         </mat-card-content>
       </mat-card>
     </div>
     <div fxFlex="33%" fxFlex.sm="33%" fxFlex.xs="100%">
-      <mat-card>
+      <mat-card (click)="openTrenchDialog()">
         <mat-card-header>
         <mat-card-title mat>Trench</mat-card-title>
       </mat-card-header>
@@ -47,22 +47,22 @@
     </div>
     <div>
       <div class="resumecards" fxLayout="column wrap" fxLayoutGap="16px grid" fxLayoutGap.xs="0% grid">
-        <div class="resumecard"fxFlex="25%" fxFlex.sm="33%" fxFlex.xs="100%">
+        <div class="resumecard"fxFlex="100%" fxFlex.sm="33%" fxFlex.xs="100%">
           <mat-card>
             <mat-card-header>
-            <mat-card-title mat>Web Devolpment Co-op - Southeastern Pensylvania Transportatioy Authority</mat-card-title>
+            <mat-card-title mat>Web Development Co-op - Southeastern Pennsylvania Transportation Authority</mat-card-title>
             <mat-card-subtitle>03/2022 - 09/2022, Philadelphia PA</mat-card-subtitle>
           </mat-card-header>
             <mat-card-content>
               <ul>
                 <li>Helped transition SEPTA's main website, septa.org, to WordPress</li>
                 <li>Daily updates to SEPTA's homepage as well as alerts and advisories for SEPTA's 100+ transit routes</li>
-                <li>Helped edit and publish online content for a major brand deal for SEPTA's first station in 25 years</li>
+                <li>Helped edit and publish online content for a major brand deal for SEPTA's first new station in 25 years</li>
               </ul>
             </mat-card-content>
           </mat-card>
         </div>
-        <div fxFlex="25%" fxFlex.sm="33%" fxFlex.xs="100%" >
+        <div class="resumecard" fxFlex="100%" fxFlex.sm="33%" fxFlex.xs="100%" >
           <mat-card>
             <mat-card-header>
             <mat-card-title mat>Game Developer - Drexel University</mat-card-title>
@@ -71,13 +71,13 @@
             <mat-card-content>
               <ul>
                 <li>Worked with a team of eight using Perforce to create and store assets for use by other students</li>
-                <li>Created and reported progress on twenty versions of game- ready assets in a timely manner</li>
-                <li>Lowered production time between iterations by around 3 hours</li>
+                <li>Created and reported progress on twenty versions of game-ready assets in a timely manner</li>
+                <li>Lowered production time between iterations by around 40 percent</li>
               </ul>
             </mat-card-content>
           </mat-card>
         </div>
-        <div fxFlex="25%" fxFlex.sm="33%" fxFlex.xs="100%" >
+        <div  class="resumecard"fxFlex="25%" fxFlex.sm="33%" fxFlex.xs="100%" >
           <mat-card>
             <mat-card-header>
             <mat-card-title mat>Lead Server/Bartender - The Club At Shannondell</mat-card-title>
@@ -98,9 +98,31 @@
   
 </div>
 <div id="PersonalProjects">
-  <mat-toolbar class = "title-toolbar">Personal Projects</mat-toolbar>
-    <div class="portfoliocards"fxLayout="row wrap" fxLayoutGap="16px">
-      <div fxFlexOffset="10%" fxFlexOffset.sm="0%"fxFlexOffset.xs="0%" fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%">
+  <mat-toolbar class = "title-toolbar">Projects</mat-toolbar>
+    <div class="portfoliocards"fxLayout="row wrap" fxLayoutGap="16px grid">
+      <div fxFlexOffset=".9%" fxFlexOffset.sm="1%"fxFlexOffset.xs="0%" fxFlex.sm="33%" fxFlex="33%" fxFlex.xs="100%" fxLayoutGap.xs="0%">
+        <mat-card>
+          <mat-card-header>
+          <mat-card-title mat>Desert Landscape</mat-card-title>
+        </mat-card-header>
+          <img mat-card-image class = "portfolioimg" src="./assets/Miholics_M-ColorLandscapeThumb.png" alt="mailbox img">
+          <mat-card-content>
+            <p>Digital painting done for a class</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div fxFlex="33%" fxFlex.sm="33%" fxFlex.xs="100%">
+        <mat-card>
+          <mat-card-header>
+          <mat-card-title mat>Ink Figure Painting</mat-card-title>
+        </mat-card-header>
+          <img mat-card-image class = "portfolioimg" src="./assets/InkFigurePaintingThumb.jpg" alt="mailbox img">
+          <mat-card-content>
+            <p>Traditional ink painting done for a class</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <!-- <div fxFlex="33%" fxFlex.sm="33%" fxFlex.xs="100%">
         <mat-card>
           <mat-card-header>
           <mat-card-title mat>Mailbox</mat-card-title>
@@ -110,32 +132,10 @@
             <p>Mailbox made as a part of street furnature asset pack</p>
           </mat-card-content>
         </mat-card>
-      </div>
-      <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%">
-        <mat-card>
-          <mat-card-header>
-          <mat-card-title mat>Mailbox</mat-card-title>
-        </mat-card-header>
-          <img mat-card-image class = "portfolioimg" src="./assets/mailbox-thumbnail.png" alt="mailbox img">
-          <mat-card-content>
-            <p>Mailbox made as a part of street furnature asset pack</p>
-          </mat-card-content>
-        </mat-card>
-      </div>
-      <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%">
-        <mat-card>
-          <mat-card-header>
-          <mat-card-title mat>Mailbox</mat-card-title>
-        </mat-card-header>
-          <img mat-card-image class = "portfolioimg" src="./assets/mailbox-thumbnail.png" alt="mailbox img">
-          <mat-card-content>
-            <p>Mailbox made as a part of street furnature asset pack</p>
-          </mat-card-content>
-        </mat-card>
-      </div>
+      </div> -->
       </div>
 </div>
-<div id="Contact">
+<!-- <div id="Contact">
   <mat-toolbar class = "title-toolbar">Contacts</mat-toolbar>
     <a>put socials links here</a>
-</div>
+</div> -->

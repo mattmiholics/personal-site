@@ -19,6 +19,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { MailboxdialogComponent } from './mailboxdialog/mailboxdialog.component';
 import { BenchDialogComponent } from './bench-dialog/bench-dialog.component';
+import { TrenchDialogComponent } from './trench-dialog/trench-dialog.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { BenchDialogComponent } from './bench-dialog/bench-dialog.component';
     NavbarComponent,
     BodyContentComponent,
     MailboxdialogComponent,
-    BenchDialogComponent
+    BenchDialogComponent,
+    TrenchDialogComponent
   ],
   imports: [
     BrowserModule,
